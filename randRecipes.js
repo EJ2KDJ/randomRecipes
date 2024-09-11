@@ -14,7 +14,7 @@ function randomRecipe() {
         "Grill",
         "Roast",
         "Steam"
-        ]
+        ];
 
     const randUtensil = [
         "spatula",
@@ -27,10 +27,10 @@ function randomRecipe() {
 
 const time = Math.floor(Math.random() * 10) + 1;
 const ingredient = randIngredient[Math.floor(Math.random() * randIngredient.length)];
-const cookingMethod = randCookingMethod[Math.floor(Math.random(Math.floor() * randCookingMethod.length))];
+const cookingMethod = randCookingMethod[Math.floor(Math.random() * randCookingMethod.length)];
 const utensil = randUtensil[Math.floor(Math.random() * randUtensil.length)];
 
-const randomizedRecipe = `${randCookingMethod} the ${ingredient} for ${time} minutes using a ${utensil}.`;
+const randomizedRecipe = `${cookingMethod} the ${ingredient} for ${time} minutes using a ${utensil}.`;
 
 console.log(randomizedRecipe);
 }
