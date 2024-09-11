@@ -9,11 +9,11 @@ function randomRecipe() {
     ];
 
     const randCookingMethod = [
-        "fry",
-        "boil",
-        "grill",
-        "roast",
-        "steam"
+        "Fry",
+        "Boil",
+        "Grill",
+        "Roast",
+        "Steam"
         ]
 
     const randUtensil = [
@@ -25,7 +25,7 @@ function randomRecipe() {
         "pressure cooker"
     ]
 
-const time = Math.floor(Math.random() * 10)
+const time = Math.floor(Math.random() * 10) + 1;
 const ingredient = randIngredient[Math.floor(Math.random() * randIngredient.length)];
 const cookingMethod = randCookingMethod[Math.floor(Math.random(Math.floor() * randCookingMethod))];
 const utensil = randUtensil[Math.floor(Math.random() * randUtensil.length)];
